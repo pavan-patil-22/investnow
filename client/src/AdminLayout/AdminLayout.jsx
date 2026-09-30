@@ -159,7 +159,7 @@ const TopBar = ({ isMobile, setIsMobileOpen, isMobileOpen, isCollapsed, setIsCol
             {isCollapsed ? <FaChevronRight /> : <FaChevronLeft />}
           </button>
         )}
-        <h1 className="page-title">Principal Dashboard</h1>
+        <h1 className="page-title">Admin Dashboard</h1>
       </div>
       
       <div className="top-bar-right">
@@ -173,7 +173,7 @@ const TopBar = ({ isMobile, setIsMobileOpen, isMobileOpen, isCollapsed, setIsCol
             <FaUserCircle />
           </div>
           <div className="user-details">
-            <span className="user-name">Principal</span>
+            {/* <span className="user-name">Principal</span> */}
             <span className="user-role">Administrator</span>
           </div>
         </div>
