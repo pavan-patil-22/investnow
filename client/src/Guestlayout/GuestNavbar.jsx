@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaChevronDown, FaBars, FaTimes, FaBuilding } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaChevronDown,
+  FaBars,
+  FaTimes,
+  FaBuilding,
+} from "react-icons/fa";
 
 const GuestNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -363,9 +371,17 @@ const GuestNavbar = () => {
           <a href="mailto:meetinvenstnow@gmail.com" className="top-bar-item">
             <FaEnvelope className="top-bar-icon" /> meetinvenstnow@gmail.com
           </a>
-          <span className="top-bar-item" style={{ cursor: "default" }}>
-            <FaMapMarkerAlt className="top-bar-icon" /> Kundapura, Karnataka
-          </span>
+
+          <a
+            href="https://maps.app.goo.gl/2wXEDwGjLx3Xy8Vq9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="top-bar-item"
+            style={{ cursor: "pointer", textDecoration: "none" }}
+          >
+            <FaMapMarkerAlt className="top-bar-icon" />
+            Kundapura, Karnataka
+          </a>
         </div>
 
         <div style={{ color: "#D4AF37", fontSize: "12px", fontWeight: "600" }}>
@@ -391,7 +407,11 @@ const GuestNavbar = () => {
           </div>
         </Link>
 
-        <button className="mobile-toggle" onClick={toggleMenu} aria-label="Toggle navigation">
+        <button
+          className="mobile-toggle"
+          onClick={toggleMenu}
+          aria-label="Toggle navigation"
+        >
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
 
@@ -448,13 +468,39 @@ const GuestNavbar = () => {
             >
               Compliance <FaChevronDown className="dropdown-icon" />
             </Link>
-            <ul className={`dropdown-menu-custom ${activeDropdown === "compliance" ? "mobile-show" : ""}`}>
-              <li className="dropdown-item-custom"><Link to="/trust-compliance" onClick={closeMenu}>Trust & Compliance Portal</Link></li>
-              <li className="dropdown-item-custom"><Link to="/regulatory-information" onClick={closeMenu}>Regulatory Disclosures</Link></li>
-              <li className="dropdown-item-custom"><Link to="/risk-disclosures" onClick={closeMenu}>Risk & Mandatory Notices</Link></li>
-              <li className="dropdown-item-custom"><Link to="/transparency" onClick={closeMenu}>Transparency Policies</Link></li>
-              <li className="dropdown-item-custom"><Link to="/privacy-policy" onClick={closeMenu}>Privacy Policy</Link></li>
-              <li className="dropdown-item-custom"><Link to="/terms-and-conditions" onClick={closeMenu}>Terms & Conditions</Link></li>
+            <ul
+              className={`dropdown-menu-custom ${activeDropdown === "compliance" ? "mobile-show" : ""}`}
+            >
+              <li className="dropdown-item-custom">
+                <Link to="/trust-compliance" onClick={closeMenu}>
+                  Trust & Compliance Portal
+                </Link>
+              </li>
+              <li className="dropdown-item-custom">
+                <Link to="/regulatory-information" onClick={closeMenu}>
+                  Regulatory Disclosures
+                </Link>
+              </li>
+              <li className="dropdown-item-custom">
+                <Link to="/risk-disclosures" onClick={closeMenu}>
+                  Risk & Mandatory Notices
+                </Link>
+              </li>
+              <li className="dropdown-item-custom">
+                <Link to="/transparency" onClick={closeMenu}>
+                  Transparency Policies
+                </Link>
+              </li>
+              <li className="dropdown-item-custom">
+                <Link to="/privacy-policy" onClick={closeMenu}>
+                  Privacy Policy
+                </Link>
+              </li>
+              <li className="dropdown-item-custom">
+                <Link to="/terms-and-conditions" onClick={closeMenu}>
+                  Terms & Conditions
+                </Link>
+              </li>
             </ul>
           </li>
 

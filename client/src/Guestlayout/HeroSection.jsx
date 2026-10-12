@@ -110,7 +110,7 @@ export default function HeroSection() {
   const reduced = useReducedMotion();
   const progress = useScrollProgress(rootRef);
   const [wordIdx, setWordIdx] = useState(0);
-  const [copied, setCopied] = useState(false); // not used, reserved
+  // const [copied, setCopied] = useState(false); // not used, reserved
 
   const cardTilt = useTilt(6);
   const btnA = useMagnetic(0.2);

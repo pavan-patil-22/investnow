@@ -5,8 +5,6 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaUserTie,
-  FaFacebookF,
-  FaTwitter,
   FaLinkedinIn,
   FaInstagram,
   FaWhatsapp,
@@ -322,16 +320,10 @@ const GuestFooter = () => {
 
             {/* Social Media Icons */}
             <div className="footer-socials">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon-link" aria-label="Facebook">
-                <FaFacebookF />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-icon-link" aria-label="Twitter">
-                <FaTwitter />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon-link" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/invest-now-797b80439/" target="_blank" rel="noopener noreferrer" className="social-icon-link" aria-label="LinkedIn">
                 <FaLinkedinIn />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon-link" aria-label="Instagram">
+              <a href="https://www.instagram.com/invest_now_2" target="_blank" rel="noopener noreferrer" className="social-icon-link" aria-label="Instagram">
                 <FaInstagram />
               </a>
               <a href="https://wa.me/917975347138" target="_blank" rel="noopener noreferrer" className="social-icon-link" aria-label="WhatsApp">
