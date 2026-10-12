@@ -405,7 +405,7 @@ const GuestFooter = () => {
             <Link to="/privacy-policy">Privacy Policy</Link>
             <Link to="/terms-and-conditions">Terms of Use</Link>
             <Link to="/trust-compliance">Compliance Hub</Link>
-            <Link to="/investnowlogin">Admin Login</Link>
+            {/* <Link to="/investnowlogin">Admin Login</Link> */}
           </div>
         </div>
       </div>
